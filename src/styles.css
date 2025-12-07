@@ -1,4 +1,8 @@
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
     border: 1px solid black;
 }
 
@@ -18,5 +22,10 @@ body {
     height: 100vh;
 }
 
+.topHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
