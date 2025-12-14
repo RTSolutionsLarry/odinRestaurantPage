@@ -10,33 +10,80 @@ const displayMenu = () => {
         {
             name: 'Cheeto Surprise',
             price: '7.99',
-            type: 'appetizer'
+            type: 'appetizer',
+            description: 'Test Description'
         },
         {
-            Name: 'Jazzy Wings',
+            name: 'Jazzy Wings',
             price: '9.99',
-            type: 'appetizer'
+            type: 'appetizer',
+            description: 'Test Description'
         },
         {
             name: 'Baked Potato',
             price: '12.99',
-            type: 'appetizer'
+            type: 'appetizer',
+            description: 'Test Description'
         },
         {
             name: 'Kale Krunch',
             price: '7.99',
-            type: 'appetizer'
+            type: 'appetizer',
+            description: 'Test Description'
         },
         {
             name: 'Gluten Pizza',
             price: '9.99',
-            type: 'appetizer'
-        }
+            type: 'appetizer',
+            description: 'Test Description'
+        },
+        {
+            name: 'Gluten Pizza',
+            price: '9.99',
+            type: 'entree',
+            description: 'Test Description'
+        },
+        {
+            name: 'Gluten Pizza',
+            price: '9.99',
+            type: 'entree',
+            description: 'Test Description'
+        },
+        {
+            name: 'Gluten Pizza',
+            price: '9.99',
+            type: 'entree',
+            description: 'Test Description'
+        },
+        {
+            name: 'Gluten Pizza',
+            price: '9.99',
+            type: 'entree',
+            description: 'Test Description'
+        },
+        {
+            name: 'Gluten Pizza',
+            price: '9.99',
+            type: 'entree',
+            description: 'Test Description'
+        },
+        {
+            name: 'Gluten Pizza',
+            price: '9.99',
+            type: 'entree',
+            description: 'Test Description'
+        },
     ];
     
-    const appetizerItems = menuItems.filter((item) => item.type = 'appetizer');
+    const appetizerItems = menuItems.filter(item => {
+        return item.type === 'appetizer';
+    });
     const appetizerItemsElements = [];
-    const entreeItems = menuItems.filter((item) => item.type = 'entree');
+    const entreeItems = menuItems.filter(item => {
+        return item.type === 'entree';
+    });
+    console.log(entreeItems);
+    
     const entreeItemsElements = [];
     const drinkItems = menuItems.filter((item) => item.type = 'drink');
     const drinkItemsElements = [];
@@ -66,13 +113,13 @@ const displayMenu = () => {
         const appetizerItem = document.createElement('div');
         appetizerItem.classList.add('appetizerItem')
         appetizerBottom.appendChild(appetizerItem);
-        appetizerItemsElements.push(appetizerItem)
+        appetizerItemsElements.push(appetizerItem);
     }
 
     let appetizerItemIndex = 0;
     for (let element of appetizerItemsElements) {
-        const appetizerName = document.createElement('p');
-        const appetizerPrice = document.createElement('p');
+        const appetizerName = document.createElement('div');
+        const appetizerPrice = document.createElement('div');
         appetizerName.classList.add('appetizerName');
         appetizerName.innerText = appetizerItems[appetizerItemIndex].name;
         appetizerPrice.classList.add('appetizerPrice');
@@ -100,10 +147,32 @@ const displayMenu = () => {
     const drinkContainer = document.createElement('div');
     drinkContainer.classList.add('menuSection')
 
-    for (let x = 0; x < 6; x++) {
+    for (let i = 0; i < 6 ; i++) {
         const entreeItem = document.createElement('div');
-
+        entreeItem.classList.add('entreeItem');
         entreeSection.appendChild(entreeItem);
+        entreeItemsElements.push(entreeItem);
+    }
+
+    let entreeItemIndex = 0;    
+    for (let element of entreeItemsElements) {
+
+        const entreeName = document.createElement('div');
+        entreeName.classList.add('entreeName');
+        entreeName.innerText = entreeItems[entreeItemIndex].name;
+
+        const entreePrice = document.createElement('div');
+        entreePrice.classList.add('entreePrice');
+        entreePrice.innerText = entreeItems[entreeItemIndex].price;
+
+        const entreeDescription = document.createElement('div');
+        entreeDescription.classList.add('entreeDescription');
+        entreeDescription.innerText = entreeItems[entreeItemIndex].description;
+
+        element.appendChild(entreeName);
+        element.appendChild(entreePrice);
+        element.appendChild(entreeDescription);
+        entreeItemIndex++;
     }
 
     mainContent.appendChild(menuContainer);

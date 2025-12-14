@@ -67,13 +67,19 @@ body {
 .appetizerTop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     text-align: center;
+    height: 100%;    
 }
 
 .appetizerBottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;    
+}
+
+.appetizerItem {
+    height: 100%;
 }
 
 .entree {
