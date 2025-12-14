@@ -22,10 +22,47 @@ body {
     height: 100vh;
 }
 
+.pageNavigation {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 .topHeader {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.menuContainer {
+    display: grid;
+    grid-template: 1fr 4fr / 2fr 1fr;
+    height: 100%;
+}
 
+.appetizer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
+
+.appetizerTop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.appetizerBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
