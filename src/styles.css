@@ -19,7 +19,7 @@ body {
     min-width: 320px;
     max-width: 1024px;
     width: 80%;
-    height: 100vh;
+    height: 150vh;
 }
 
 .pageNavigation {
@@ -53,16 +53,24 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
     height: 100%;
+}
+
+.appetizerHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .appetizerTop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
 }
 
 .appetizerBottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: center;    
 }
