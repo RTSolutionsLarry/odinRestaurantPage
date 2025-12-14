@@ -96,8 +96,15 @@ const displayMenu = () => {
     entreeContainer.appendChild(entreeSection);
 
     entreeContainer.classList.add('menuSection')
+    entreeContainer.classList.add('entree');
     const drinkContainer = document.createElement('div');
     drinkContainer.classList.add('menuSection')
+
+    for (let x = 0; x < 6; x++) {
+        const entreeItem = document.createElement('div');
+
+        entreeSection.appendChild(entreeItem);
+    }
 
     mainContent.appendChild(menuContainer);
     menuContainer.appendChild(appetizerContainer);
