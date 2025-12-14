@@ -6,9 +6,39 @@ const displayMenu = () => {
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menuContainer');
 
-    //Appetizer Section
+    const menuItems = [
+        {
+            name: 'Cheeto Surprise',
+            price: '7.99',
+            type: 'appetizer'
+        },
+        {
+            Name: 'Jazzy Wings',
+            price: '9.99',
+            type: 'appetizer'
+        },
+        {
+            name: 'Baked Potato',
+            price: '12.99',
+            type: 'appetizer'
+        },
+        {
+            name: 'Kale Krunch',
+            price: '7.99',
+            type: 'appetizer'
+        },
+        {
+            name: 'Gluten Pizza',
+            price: '9.99',
+            type: 'appetizer'
+        }
+    ];
+    
+    const appetizerItems = menuItems.filter((item) => item.type = 'appetizer');
+    const entreeItems = menuItems.filter((item) => item.type = 'entree');
+    const drinkItems = menuItems.filter((item) => item.type = 'drink');
 
-    const appetizerItems = ['Cheetos','Jazzy Wings', 'Baked Potato', 'Kale Krunch', 'Gluten Pizza'];
+    //Appetizer Section
 
     const appetizerContainer = document.createElement('div');
     appetizerContainer.classList.add('menuSection');
