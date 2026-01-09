@@ -73,19 +73,45 @@ const displayMenu = () => {
             type: 'entree',
             description: 'Test Description'
         },
+        {
+            name: 'Old Fashioned',
+            price: '9.99',
+            type: 'drink',
+            description: 'Test Description'
+        },
+        {
+            name: 'Negroni',
+            price: '9.99',
+            type: 'drink',
+            description: 'Test Description'
+        },            
+        {
+            name: 'French 75',
+            price: '9.99',
+            type: 'drink',
+            description: 'Test Description'
+        },
+        {
+            name: 'Dirty Martini',
+            price: '9.99',
+            type: 'drink',
+            description: 'Test Description'
+        },                          
     ];
     
     const appetizerItems = menuItems.filter(item => {
         return item.type === 'appetizer';
     });
     const appetizerItemsElements = [];
+
     const entreeItems = menuItems.filter(item => {
         return item.type === 'entree';
-    });
-    console.log(entreeItems);
-    
+    });    
     const entreeItemsElements = [];
-    const drinkItems = menuItems.filter((item) => item.type = 'drink');
+
+    const drinkItems = menuItems.filter(item =>  {
+        return item.type === 'drink';
+    });
     const drinkItemsElements = [];
 
     //Appetizer Section
@@ -144,8 +170,7 @@ const displayMenu = () => {
 
     entreeContainer.classList.add('menuSection')
     entreeContainer.classList.add('entree');
-    const drinkContainer = document.createElement('div');
-    drinkContainer.classList.add('menuSection')
+
 
     for (let i = 0; i < 6 ; i++) {
         const entreeItem = document.createElement('div');
@@ -174,6 +199,23 @@ const displayMenu = () => {
         element.appendChild(entreeDescription);
         entreeItemIndex++;
     }
+
+    //drink Section
+
+    const drinkContainer = document.createElement('div');
+
+    const drinkHeader = document.createElement('div');
+    drinkHeader.classList.add('drinkHeader');
+    drinkHeader.innerText = 'Drinks';
+    drinkContainer.appendChild(drinkHeader);
+
+    const drinkSection = document.createElement('div');
+    drinkSection.classList.add("drinkSection");
+    drinkContainer.appendChild(drinkSection);    
+
+    drinkContainer.classList.add('menuSection')
+
+    //append Section
 
     mainContent.appendChild(menuContainer);
     menuContainer.appendChild(appetizerContainer);

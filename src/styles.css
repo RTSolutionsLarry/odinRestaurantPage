@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     border: 0;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid black;
+    color: black;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
     max-width: 1024px;
     width: 80%;
     height: 150vh;
-    background-color: black;
+    background-color: white;
 }
 
 .pageNavigation {
