@@ -64,7 +64,8 @@ body {
 }
 
 .appetizerHeader,
-.entreeHeader {
+.entreeHeader,
+.drinkHeader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,4 +102,16 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 100%;
+}
+
+.drink {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+
+.drinkSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;    
 }

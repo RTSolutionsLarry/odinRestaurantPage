@@ -1,5 +1,4 @@
 const displayMenu = () => {
-    console.log('Inside menu js');
     
     const mainContent = document.getElementsByClassName('mainSection')[0];
 
@@ -213,7 +212,36 @@ const displayMenu = () => {
     drinkSection.classList.add("drinkSection");
     drinkContainer.appendChild(drinkSection);    
 
-    drinkContainer.classList.add('menuSection')
+    drinkContainer.classList.add('menuSection');
+    drinkContainer.classList.add('drink');
+
+    for (let i = 0; i < 4 ; i++) {
+        const drinkItem = document.createElement('div');
+        drinkItem.classList.add('drinkItem');
+        drinkSection.appendChild(drinkItem);
+        drinkItemsElements.push(drinkItem);
+    }
+    
+    let drinkItemIndex = 0;    
+    for (let element of drinkItemsElements) {
+
+        const drinkName = document.createElement('div');
+        drinkName.classList.add('drinkName');
+        drinkName.innerText = drinkItems[drinkItemIndex].name;
+
+        const drinkPrice = document.createElement('div');
+        drinkPrice.classList.add('drinkPrice');
+        drinkPrice.innerText = drinkItems[drinkItemIndex].price;
+
+        const drinkDescription = document.createElement('div');
+        drinkDescription.classList.add('drinkDescription');
+        drinkDescription.innerText = drinkItems[drinkItemIndex].description;
+
+        element.appendChild(drinkName);
+        element.appendChild(drinkPrice);
+        element.appendChild(drinkDescription);
+        drinkItemIndex++;
+    }    
 
     //append Section
 
