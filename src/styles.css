@@ -3,23 +3,29 @@
     margin: 0;
     padding: 0;
     border: 0;
-    border: 1px solid black;
+    border: 1px solid white;
+    color: white;
 }
 
 body {
     display: flex;
     justify-content: center;
+    background: url(images/inglewoodColor.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .appWrapper {
     display: grid;
-    grid-template-rows: 2fr 1fr 7fr 1fr;
+    grid-template-rows: 1fr 2fr 7fr 1fr;
     grid-template-columns: 1fr;
     justify-content: center;
     min-width: 320px;
     max-width: 1024px;
     width: 80%;
     height: 150vh;
+    background-color: black;
 }
 
 .pageNavigation {
@@ -81,6 +87,7 @@ body {
 .appetizerItem {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     justify-content: center;
 }
 
