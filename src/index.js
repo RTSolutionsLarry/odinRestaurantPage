@@ -1,5 +1,5 @@
 // src/index.js
-//import "./styles.css";
+import "./styles.css";
 
 //main page
 import { displayAboutUs } from "./aboutUs.js";
