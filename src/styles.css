@@ -2,7 +2,9 @@
     --font-color: black;
     --border-color: 1px solid black;
     --secondary-border-color: 1px dashed black;
-    --background-color: white;
+    --background-color: #FFFDE1;
+    --healthy-green: #86AC55;
+    --earthy-orange: #EA9B5E;
 }
 
 * {
@@ -16,11 +18,7 @@
 body {
     display: flex;
     justify-content: center;
-    /*background: url(images/inglewoodColor.jpg);*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: black;
+    background-color: var(--background-color);
 }
 
 .appWrapper {
@@ -29,27 +27,39 @@ body {
     grid-template-columns: 1fr;
     justify-content: center;
     min-width: 320px;
-    max-width: 1024px;
-    width: 100%;
+    width: 1024px;
     height: 150vh;
-    background-color: #EA9B5E;
     border: var(--border-color);
 }
 
 .topAndNavigation {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 2fr 5fr;
+    background-color: var(--earthy-orange);
 }
 
-.pageNavigation {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    border: var(--border-color);
+.pageNavigation {  
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.orderOnlineContainer {
-    background-color: #86AC55;
+.navContainer {
+    display: flex;
+}
+
+.subtitleContainer {
+    background-color: var(--healthy-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topHeader {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .nav {
@@ -57,6 +67,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin: 20px;
 }
 
 .mainOfferContainer {
@@ -65,6 +76,11 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 100%;
+    width: 1024px;
+}
+
+.mainSection {
+    justify-items: center;
 }
 
 .mainOfferImage1 {
@@ -91,17 +107,12 @@ body {
     margin: 20px;    
 }
 
-.topHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: var(--border-color);
-}
-
 .menuContainer {
     display: grid;
     grid-template: 1fr 4fr / 2fr 1fr;
     height: 100%;
+    width: 1024px;
+    background-color: var(--background-color);
 }
 
 .menuSection {
