@@ -37,40 +37,39 @@ const displayMenu = () => {
             description: 'Test Description'
         },
         {
-            name: 'Gluten Pizza',
+            name: 'Bowl of the Gods',
             price: '9.99',
             type: 'entree',
-            description: 'Test Description'
+            description: 'A divine mix of fresh, vibrant ingredients like tender lamb, creamy tzatziki, and a burst of lemon. This bowl brings the flavors of ancient Greece straight to your table, fit for the gods themselves.'
         },
         {
-            name: 'Gluten Pizza',
+            name: 'Mediterranean Mirage',
             price: '9.99',
             type: 'entree',
-            description: 'Test Description'
+            description: 'A colorful, refreshing bowl that combines crisp veggies, roasted chickpeas, and aromatic spices. It’s a quick getaway to the Mediterranean, with every bite offering a taste of paradise.'
         },
         {
-            name: 'Gluten Pizza',
+            name: 'The Olive Grove Bowl',
             price: '9.99',
             type: 'entree',
-            description: 'Test Description'
+            description: 'Featuring a mix of earthy olives, velvety hummus, and hearty grains, this bowl celebrates the region’s rich agricultural roots. Every ingredient is handpicked to bring the warmth and charm of an olive grove right to your plate.'
         },
         {
-            name: 'Gluten Pizza',
+            name: 'Sunset on the Sea',
             price: '9.99',
             type: 'entree',
-            description: 'Test Description'
+            description: "Inspired by the golden hues of Mediterranean sunsets, this bowl layers sun-drenched tomatoes, grilled fish, and fresh herbs. It's a celebration of the sea’s bounty and the region’s vibrant culinary tradition."},
+        {
+            name: "Baba’s Feast",
+            price: '9.99',
+            type: 'entree',
+            description: "A hearty bowl that combines rich lamb, smoky baba ghanoush, and roasted veggies, creating the ultimate comfort food. Named after a loving grandmother’s feast, it’s a plate full of Mediterranean heart and soul."
         },
         {
-            name: 'Gluten Pizza',
+            name: 'Aegean Bliss Bowl',
             price: '9.99',
             type: 'entree',
-            description: 'Test Description'
-        },
-        {
-            name: 'Gluten Pizza',
-            price: '9.99',
-            type: 'entree',
-            description: 'Test Description'
+            description: 'A refreshing blend of crisp greens, quinoa, feta, and a tangy dressing that evokes the peaceful waters of the Aegean Sea. Each bite is a reminder of the blissful, laid-back Mediterranean lifestyle.'
         },
         {
             name: 'Old Fashioned',

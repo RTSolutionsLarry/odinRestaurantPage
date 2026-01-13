@@ -69,6 +69,10 @@ body {
     margin: 20px;
 }
 
+.subtitle {
+    font-size: 30px;
+}
+
 .mainOfferContainer {
     background-color: var(--background-color);
     display: grid;
@@ -117,7 +121,7 @@ body {
 }
 
 .menuSection {
-    border: var(--border-color);
+    margin: 20px;
 }
 
 .appetizer {
@@ -128,6 +132,7 @@ body {
     display: grid;
     grid-template-rows:  1fr 1fr 1fr;
     height: 100%;
+    border-bottom: double 2px black;
 }
 
 .appetizerHeader,
@@ -137,6 +142,14 @@ body {
     justify-content: center;
     align-items: center;
     border-bottom: var(--secondary-border-color);
+    font-size: 30px;
+    font-weight: 550;
+    color: var(--healthy-green);
+    text-shadow:
+    -.5px .5px 0 #000,
+     .5px .5px 0 #000,
+    -.5px  .5px 0 #000,
+     .5px  .5px 0 #000;
 }
 
 .appetizerTop {
@@ -163,6 +176,7 @@ body {
 .entree {
     display: grid;
     grid-template-rows: 1fr 9fr;
+    border-right: double 2px black;    
 }
 
 .entreeSection {
@@ -170,6 +184,12 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 100%;
+}
+
+.entreeName,
+.entreePrice,
+.entreeDescription {
+    margin: 5px;
 }
 
 .drink {
@@ -180,13 +200,14 @@ body {
 .drinkSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     height: 100%;    
 }
 
 .entreeItem,
 .drinkItem {
-    text-align: center;
+    text-align: left;
+    margin: 5px;
 }
 
 .mainOfferContainer {
