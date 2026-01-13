@@ -29,7 +29,6 @@ body {
     min-width: 320px;
     width: 1024px;
     height: 150vh;
-    border: var(--border-color);
 }
 
 .topAndNavigation {
@@ -80,31 +79,33 @@ body {
 }
 
 .mainSection {
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mainOfferImage1 {
     background: url(images/bowl1.jpg);
     background-size: cover;
-    margin: 20px;
+    margin: 10px;
 }
 
 .mainOfferImage2 {
     background: url(images/bowl2.jpg);
     background-size: cover;
-    margin: 20px;    
+    margin: 10px;    
 }
 
 .mainOfferImage3 {
     background: url(images/bowl3.jpg);
     background-size: cover;
-    margin: 20px;    
+    margin: 10px;    
 }
 
 .mainOfferImage4 {
     background: url(images/bowl4.jpg);
     background-size: cover;
-    margin: 20px;    
+    margin: 10px;    
 }
 
 .menuContainer {
@@ -206,5 +207,5 @@ body {
 }
 
 .footer {
-    border: var(--border-color);
+    
 }
