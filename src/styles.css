@@ -16,23 +16,29 @@
 body {
     display: flex;
     justify-content: center;
-    background: url(images/inglewoodColor.jpg);
+    /*background: url(images/inglewoodColor.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: black;
 }
 
 .appWrapper {
     display: grid;
-    grid-template-rows: 1fr 2fr 7fr 1fr;
+    grid-template-rows: .5fr 1fr 7fr 1fr;
     grid-template-columns: 1fr;
     justify-content: center;
     min-width: 320px;
     max-width: 1024px;
-    width: 80%;
+    width: 100%;
     height: 150vh;
-    background-color: var(--background-color);
+    background-color: #EA9B5E;
     border: var(--border-color);
+}
+
+.topAndNavigation {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
 }
 
 .pageNavigation {
@@ -42,6 +48,10 @@ body {
     border: var(--border-color);
 }
 
+.orderOnlineContainer {
+    background-color: #86AC55;
+}
+
 .nav {
     display: flex;
     justify-content: center;
@@ -49,8 +59,36 @@ body {
     cursor: pointer;
 }
 
-.mainOffer {
-    
+.mainOfferContainer {
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
+
+.mainOfferImage1 {
+    background: url(images/bowl1.jpg);
+    background-size: cover;
+    margin: 20px;
+}
+
+.mainOfferImage2 {
+    background: url(images/bowl2.jpg);
+    background-size: cover;
+    margin: 20px;    
+}
+
+.mainOfferImage3 {
+    background: url(images/bowl3.jpg);
+    background-size: cover;
+    margin: 20px;    
+}
+
+.mainOfferImage4 {
+    background: url(images/bowl4.jpg);
+    background-size: cover;
+    margin: 20px;    
 }
 
 .topHeader {
