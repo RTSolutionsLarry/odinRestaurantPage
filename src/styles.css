@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
 :root {
     --font-color: black;
     --border-color: 1px solid black;
@@ -5,6 +7,7 @@
     --background-color: #FFFDE1;
     --healthy-green: #86AC55;
     --earthy-orange: #EA9B5E;
+    --earthy-orange-text: #dd6a13; 
 }
 
 * {
@@ -13,6 +16,7 @@
     padding: 0;
     border: 0;
     color: var(--font-color);
+    font-family: 'Merriweather', serif;
 }
 
 body {
@@ -70,7 +74,7 @@ body {
 }
 
 .subtitle {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .mainOfferContainer {
@@ -190,6 +194,17 @@ body {
 .entreePrice,
 .entreeDescription {
     margin: 5px;
+}
+
+.entreeName,
+.drinkName {
+    font-size: 18px;
+}
+
+.entreeDescription,
+.drinkDescription {
+    color: var(--earthy-orange-text);
+    font-size: 12px;
 }
 
 .drink {

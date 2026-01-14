@@ -38,62 +38,62 @@ const displayMenu = () => {
         },
         {
             name: 'Bowl of the Gods',
-            price: '9.99',
+            price: '$20',
             type: 'entree',
             description: 'A divine mix of fresh, vibrant ingredients like tender lamb, creamy tzatziki, and a burst of lemon. This bowl brings the flavors of ancient Greece straight to your table, fit for the gods themselves.'
         },
         {
             name: 'Mediterranean Mirage',
-            price: '9.99',
+            price: '$16',
             type: 'entree',
             description: 'A colorful, refreshing bowl that combines crisp veggies, roasted chickpeas, and aromatic spices. It’s a quick getaway to the Mediterranean, with every bite offering a taste of paradise.'
         },
         {
             name: 'The Olive Grove Bowl',
-            price: '9.99',
+            price: '$14',
             type: 'entree',
             description: 'Featuring a mix of earthy olives, velvety hummus, and hearty grains, this bowl celebrates the region’s rich agricultural roots. Every ingredient is handpicked to bring the warmth and charm of an olive grove right to your plate.'
         },
         {
             name: 'Sunset on the Sea',
-            price: '9.99',
+            price: '$17',
             type: 'entree',
             description: "Inspired by the golden hues of Mediterranean sunsets, this bowl layers sun-drenched tomatoes, grilled fish, and fresh herbs. It's a celebration of the sea’s bounty and the region’s vibrant culinary tradition."},
         {
             name: "Baba’s Feast",
-            price: '9.99',
+            price: '$15',
             type: 'entree',
             description: "A hearty bowl that combines rich lamb, smoky baba ghanoush, and roasted veggies, creating the ultimate comfort food. Named after a loving grandmother’s feast, it’s a plate full of Mediterranean heart and soul."
         },
         {
             name: 'Aegean Bliss Bowl',
-            price: '9.99',
+            price: '$13',
             type: 'entree',
             description: 'A refreshing blend of crisp greens, quinoa, feta, and a tangy dressing that evokes the peaceful waters of the Aegean Sea. Each bite is a reminder of the blissful, laid-back Mediterranean lifestyle.'
         },
         {
             name: 'Old Fashioned',
-            price: '9.99',
+            price: '$15',
             type: 'drink',
-            description: 'Test Description'
+            description: 'A classic cocktail made with muddled sugar, bitters, and bourbon or rye, offering a perfect balance of sweetness, bitterness, and strength.'
         },
         {
             name: 'Negroni',
-            price: '9.99',
+            price: '$14',
             type: 'drink',
-            description: 'Test Description'
+            description: 'A bold and aromatic mix of gin, vermouth rosso, and Campari, delivering a slightly bitter and sophisticated taste.'
         },            
         {
             name: 'French 75',
-            price: '9.99',
+            price: '$15',
             type: 'drink',
-            description: 'Test Description'
+            description: 'A refreshing combination of gin, champagne, lemon juice, and sugar, creating a bubbly, citrusy cocktail that’s perfect for celebrations.'
         },
         {
             name: 'Dirty Martini',
-            price: '9.99',
+            price: '$13',
             type: 'drink',
-            description: 'Test Description'
+            description: 'A savory twist on the martini with gin or vodka, dry vermouth, and a splash of olive brine for a salty, briny kick.'
         },                          
     ];
     
