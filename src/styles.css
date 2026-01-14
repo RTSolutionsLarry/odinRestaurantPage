@@ -243,5 +243,69 @@ body {
 }
 
 .footer {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    background-color: var(--earthy-orange);
+}
+
+.footerHeader {
+    text-align: center;
+}
+
+.BusinessHoursContainer,
+.ContactUsContainer,
+.socialMediaContainer {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    margin-top: 20px;
+}
+
+.hoursContainer,
+.addressContainer {
+    text-decoration: none;
+    text-align: center;
+    font-size: 10px;
+}
+
+.businessHours,
+.contactInfo {
+    list-style: none;
+}
+
+.iconContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.aboutUsContainer {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    height: 100%;
+    width: 100%;
+}
+
+.bioPicture {
+    background: url(images/bio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bioContainer {
+    margin: 30px;
+}
+
+.bioMessageHeader {
+    color: var(--healthy-green);
+    text-shadow:
+    -.5px .5px 0 #000,
+     .5px .5px 0 #000,
+    -.5px  .5px 0 #000,
+     .5px  .5px 0 #000;
+}
+
+.bioMessage {
+    margin-top: 20px;
+    line-height: 1.5;
 }
